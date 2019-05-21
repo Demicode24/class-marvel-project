@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css?family=Encode+Sans+Condensed|Oswald&display=swap');
+
+/*
+font-family: 'Oswald', sans-serif;
+font-family: 'Encode Sans Condensed', sans-serif;
+*/
+
+/* presets*/
+
+*{
+    font-family: 'Encode Sans Condensed', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+}
+
+.container{
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.container:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+@keyframes btnhover{
+    0%{
+        background-color: #c03;
+        border-radius: 0;
+    }
+    100%{
+        background-color: #333;
+        border-radius: 10px;
+    }
+}
+
+.btn{
+    display: inline-block;
+    background-color: #c03;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+}
+
+.btn:hover{
+    animation: btnhover 1s linear 1;
+    background: #333;
+    border-radius: 15px;
+}
+
+/* Nav */
+
+header{
+    text-align: center;
+}
+
+header img{
+    max-width: 200px;
+    padding: 10px;
+}
+
+nav ul{
+    list-style: none;
+}
+
+nav li{
+    display: inline-block
+}
+
+nav a{
+    color: #c03;
+    text-decoration: none;
+    border: 1px solid #c03;
+    display: block;
+    padding: 2px 10px;
+}
+
+#hero{
+    background: url(../img/ironman.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.overlay{
+    background: linear-gradient(rgba(204, 0, 51, .5), rgba(204, 0, 51, .75));
+}
+
+#hero-content{
+    text-align: center;
+    padding: 40px;
+}
+
+#hero-content p{
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+#hero-content h1, #hero-content p{
+    color: #fff;
+}
+
+/*About*/
+
+#about{
+    padding: 40px;
+}
+
+/* featured */
+
+.product{
+    width: 33.333333%;
+    float: left; 
+}
+
+#p1{
+    background: url(../img/spidey.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+#p2{
+    background: url(../img/thor.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+#p3{
+    background: url(../img/wolvie.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+@keyframes fadein{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+
+.product{
+    height: 200px;
+}
+
+.product-detail{
+    height: 100%;
+    display: none;
+}
+
+.product:hover .product-detail{
+    animation: fadein .5s linear 1;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
